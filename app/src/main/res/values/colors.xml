@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgCream">#faf5e9</color>
+    <color name="topBarBrown">#8B4E10</color>
+    <color name="accentOrange">#F28C1B</color>
+    <color name="cardBlueGrey">#5F768A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textDark">#2C2C2C</color>
+    <color name="hintGrey">#8A8A8A</color>
+</resources>
+

@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgCream"
+    android:orientation="vertical">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="18dp"
+        android:background="@color/topBarBrown"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="18dp">
+
+        <LinearLayout
+            android:id="@+id/spinner_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:dropDownWidth="wrap_content"
+                android:dropDownHorizontalOffset="0dp"
+                android:dropDownVerticalOffset="50dp"
+                android:entries="@array/activity_modes"
+                android:padding="0dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:id="@+id/btnArrow"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/arrow_down_svgrepo_com"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TABS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="18dp">
+
+        <!-- PRINCIPAL -->
+        <LinearLayout
+            android:id="@+id/tabPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTabPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRINCIPAL"
+                android:textColor="@color/hintGrey"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/indicatorPrincipal"
+                android:layout_width="70dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tab_indicator_orange" />
+        </LinearLayout>
+
+        <!-- CATEGORÍAS -->
+        <LinearLayout
+            android:id="@+id/tabCategorias"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTabCategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CATEGORÍAS"
+                android:textColor="@color/textDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/indicatorCategorias"
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- CONTENEDORES: UNO U OTRO -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="18dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="18dp">
+
+        <!-- PRINCIPAL -->
+        <LinearLayout
+            android:id="@+id/containerPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/content_home_principal" />
+        </LinearLayout>
+
+        <!-- CATEGORÍAS (por defecto visible como la imagen) -->
+        <LinearLayout
+            android:id="@+id/containerCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include layout="@layout/content_home_categorias" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

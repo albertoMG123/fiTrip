@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FiTrip</string>
+    <string name="bienvenido_a_fitrip">Bienvenido a</string>
+    <string name="bienvenida">Encuentra rutas, parques deportivos, pistas públicas y centros como yoga o gym.</string>
+    <string name="cuenta_existente">¿Ya tienes una cuenta? Inicia sesión</string>
+    <string name="empieza">Empieza →</string>
+
+    <string-array name="activity_modes">
+        <item>ACTIVIDADES DE INTERIOR</item>
+        <item>ACTIVIDADES DE EXTERIOR</item>
+    </string-array>
+
+</resources>

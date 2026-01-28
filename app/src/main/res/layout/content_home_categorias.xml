@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Lista de cards tipo “Categories” -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/category_card_bg_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="18dp"
+                android:text="CATEGORÍA"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textDark" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/category_card_bg_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="18dp"
+                android:text="CATEGORÍA"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textDark" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/category_card_bg_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="18dp"
+                android:text="CATEGORÍA"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textDark" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/category_card_bg_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="18dp"
+                android:text="CATEGORÍA"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/textDark" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="24dp"/>
+    </LinearLayout>
+</ScrollView>

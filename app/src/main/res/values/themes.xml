@@ -1,0 +1,48 @@
+<!-- res/values/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- App theme basado en tu paleta -->
+    <style name="Theme.FiTrip" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/topBarBrown</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/accentOrange</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorTertiary">@color/cardBlueGrey</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <!-- Fondos / superficies -->
+        <item name="android:colorBackground">@color/bgCream</item>
+
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/textDark</item>
+
+        <item name="colorSurfaceVariant">@color/bgCream</item>
+        <item name="colorOnSurfaceVariant">@color/textDark</item>
+
+        <!-- Texto/inputs -->
+        <item name="android:textColorHint">@color/hintGrey</item>
+
+        <!-- Status bar / navigation bar -->
+        <item name="android:statusBarColor">@color/bgCream</item>
+        <item name="android:navigationBarColor">@color/topBarBrown</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Ripple / highlight -->
+        <item name="colorControlHighlight">@color/accentOrange</item>
+
+        <!-- Opcional: tipografía (si no quieres tocarlo, borra estas 2 líneas) -->
+        <item name="android:textColorPrimary">@color/textDark</item>
+        <item name="android:textColorSecondary">@color/hintGrey</item>
+
+    </style>
+  <!-- Base application theme. -->
+    <style name="Base.Theme.FiTrip" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+</resources>

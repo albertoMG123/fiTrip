@@ -27,13 +27,13 @@
             android:layout_height="0dp"
             android:layout_weight="0.2" />
 
-        <!-- Input: Nombre -->
+        <!-- Input: Email -->
         <EditText
             android:id="@+id/etUser"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@drawable/rounded_white_stroke"
-            android:hint="Nombre"
+            android:hint="Email"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textColor="@color/textDark"

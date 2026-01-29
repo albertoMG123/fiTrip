@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "183896546325",
+    "firebase_url": "https://fitrip-84125-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fitrip-84125",
+    "storage_bucket": "fitrip-84125.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183896546325:android:865abdf0bcadb48a63821c",
+        "android_client_info": {
+          "package_name": "com.example.fitrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183896546325-d7pqmcva60nbu72ulomds37gbj5ojbhi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPAvxZpT28ro9lbQKfg3NZHlqfDZAiE5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183896546325-d7pqmcva60nbu72ulomds37gbj5ojbhi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_principal"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Principal" />
+    <item
+        android:id="@+id/navigation_nuevo"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Nuevo" />
+    <item
+        android:id="@+id/navigation_cuenta"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Cuenta" />
+    <item
+        android:id="@+id/navigation_configuracion"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Configuración" />
+</menu>

@@ -2,11 +2,10 @@ package com.example.fitrip.ui.home;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSpinner;
@@ -14,17 +13,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import com.example.fitrip.R;
 
 public class HomeActivity extends AppCompatActivity {
     // 0 = interior, 1 = exterior
     private int currentMode = 0;
     private boolean firstSelection = true;
-    private LinearLayout tabPrincipal, tabCategorias;
-    private TextView tvTabPrincipal, tvTabCategorias;
-
-    private View indicatorPrincipal, indicatorCategorias;
-    private View containerPrincipal, containerCategorias;
+    private View containerPrincipal;
+    private View containerNuevo;
+    private View containerCuenta;
+    private View containerConfiguracion;
 
     // ✅ NUEVO
     private LinearLayout spinnerContainer;
@@ -104,44 +104,59 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        tabPrincipal = findViewById(R.id.tabPrincipal);
-        tabCategorias = findViewById(R.id.tabCategorias);
-
-        tvTabPrincipal = findViewById(R.id.tvTabPrincipal);
-        tvTabCategorias = findViewById(R.id.tvTabCategorias);
-
-        indicatorPrincipal = findViewById(R.id.indicatorPrincipal);
-        indicatorCategorias = findViewById(R.id.indicatorCategorias);
-
         containerPrincipal = findViewById(R.id.containerPrincipal);
-        containerCategorias = findViewById(R.id.containerCategorias);
+        containerNuevo = findViewById(R.id.containerNuevo);
+        containerCuenta = findViewById(R.id.containerCuenta);
+        containerConfiguracion = findViewById(R.id.containerConfiguracion);
+
+        BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigation);
+        bottomNavigation.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.navigation_principal) {
+                showPrincipal();
+                return true;
+            }
+            if (itemId == R.id.navigation_nuevo) {
+                showNuevo();
+                return true;
+            }
+            if (itemId == R.id.navigation_cuenta) {
+                showCuenta();
+                return true;
+            }
+            if (itemId == R.id.navigation_configuracion) {
+                showConfiguracion();
+                return true;
+            }
+            return false;
+        });
 
         // Por defecto
-        showPrincipal();
-
-        tabPrincipal.setOnClickListener(v -> showPrincipal());
-        tabCategorias.setOnClickListener(v -> showCategorias());
+        bottomNavigation.setSelectedItemId(R.id.navigation_principal);
     }
 
     private void showPrincipal() {
-        containerPrincipal.setVisibility(View.VISIBLE);
-        containerCategorias.setVisibility(View.GONE);
-
-        tvTabPrincipal.setTextColor(getColor(R.color.textDark));
-        tvTabCategorias.setTextColor(getColor(R.color.hintGrey));
-
-        indicatorPrincipal.setBackgroundResource(R.drawable.tab_indicator_orange);
-        indicatorCategorias.setBackgroundResource(android.R.color.transparent);
+        setVisibleContainer(containerPrincipal);
     }
 
-    private void showCategorias() {
-        containerPrincipal.setVisibility(View.GONE);
-        containerCategorias.setVisibility(View.VISIBLE);
+    private void showNuevo() {
+        setVisibleContainer(containerNuevo);
+    }
 
-        tvTabPrincipal.setTextColor(getColor(R.color.hintGrey));
-        tvTabCategorias.setTextColor(getColor(R.color.textDark));
+    private void showCuenta() {
+        setVisibleContainer(containerCuenta);
+    }
 
-        indicatorPrincipal.setBackgroundResource(android.R.color.transparent);
-        indicatorCategorias.setBackgroundResource(R.drawable.tab_indicator_orange);
+    private void showConfiguracion() {
+        setVisibleContainer(containerConfiguracion);
+    }
+
+    private void setVisibleContainer(View visibleContainer) {
+        containerPrincipal.setVisibility(visibleContainer == containerPrincipal ? View.VISIBLE : View.GONE);
+        containerNuevo.setVisibility(visibleContainer == containerNuevo ? View.VISIBLE : View.GONE);
+        containerCuenta.setVisibility(visibleContainer == containerCuenta ? View.VISIBLE : View.GONE);
+        containerConfiguracion.setVisibility(
+                visibleContainer == containerConfiguracion ? View.VISIBLE : View.GONE
+        );
     }
 }

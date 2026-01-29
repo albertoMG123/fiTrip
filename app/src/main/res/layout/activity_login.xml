@@ -18,7 +18,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="30dp"
-            android:contentDescription="Logo"
+            android:contentDescription="@string/login_logo_description"
             android:scaleType="centerInside"
             android:src="@drawable/ic_logo" />
 
@@ -27,13 +27,13 @@
             android:layout_height="0dp"
             android:layout_weight="0.2" />
 
-        <!-- Input: Nombre -->
+        <!-- Input: Email -->
         <EditText
             android:id="@+id/etUser"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@drawable/rounded_white_stroke"
-            android:hint="Nombre"
+            android:hint="@string/login_email_hint"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textColor="@color/textDark"
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@drawable/rounded_white_stroke"
-            android:hint="Contraseña"
+            android:hint="@string/login_password_hint"
             android:inputType="textPassword"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
@@ -73,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="Recordar usuario"
+                android:text="@string/login_remember_user"
                 android:textColor="@color/textDark" />
         </LinearLayout>
 
@@ -88,7 +88,7 @@
             android:layout_width="170dp"
             android:layout_height="52dp"
             android:background="@drawable/rounded_orange"
-            android:text="Aceptar"
+            android:text="@string/login_accept"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -105,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="18dp"
             android:padding="10dp"
-            android:text="Crear una nueva cuenta"
+            android:text="@string/login_create_account"
             android:textColor="@color/textDark" />
 
     </LinearLayout>

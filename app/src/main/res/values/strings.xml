@@ -4,6 +4,21 @@
     <string name="bienvenida">Encuentra rutas, parques deportivos, pistas públicas y centros como yoga o gym.</string>
     <string name="cuenta_existente">¿Ya tienes una cuenta? Inicia sesión</string>
     <string name="empieza">Empieza →</string>
+    <string name="nav_buscar">Buscar</string>
+    <string name="nav_social">Social</string>
+    <string name="nav_nuevo">Nuevo</string>
+    <string name="nav_cuenta">Cuenta</string>
+    <string name="nav_configuracion">Configuración</string>
+    <string name="content_nuevo_title">Nuevo</string>
+    <string name="content_cuenta_title">Cuenta</string>
+    <string name="content_configuracion_title">Configuración</string>
+    <string name="content_social_title">Social</string>
+    <string name="login_logo_description">Logo</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_remember_user">Recordar usuario</string>
+    <string name="login_accept">Aceptar</string>
+    <string name="login_create_account">Crear una nueva cuenta</string>
 
     <string-array name="activity_modes">
         <item>ACTIVIDADES DE INTERIOR</item>

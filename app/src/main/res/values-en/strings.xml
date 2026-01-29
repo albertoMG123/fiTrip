@@ -5,13 +5,15 @@
     <string name="cuenta_existente">Already have an account? Sign in</string>
     <string name="empieza">Start →</string>
 
-    <string name="nav_principal">Home</string>
+    <string name="nav_buscar">Search</string>
+    <string name="nav_social">Social</string>
     <string name="nav_nuevo">New</string>
     <string name="nav_cuenta">Account</string>
     <string name="nav_configuracion">Settings</string>
     <string name="content_nuevo_title">New</string>
     <string name="content_cuenta_title">Account</string>
     <string name="content_configuracion_title">Settings</string>
+    <string name="content_social_title">Social</string>
 
     <string-array name="activity_modes">
         <item>INDOOR ACTIVITIES</item>

@@ -21,7 +21,8 @@ public class HomeActivity extends AppCompatActivity {
     // 0 = interior, 1 = exterior
     private int currentMode = 0;
     private boolean firstSelection = true;
-    private View containerPrincipal;
+    private View containerBuscar;
+    private View containerSocial;
     private View containerNuevo;
     private View containerCuenta;
     private View containerConfiguracion;
@@ -104,7 +105,8 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        containerPrincipal = findViewById(R.id.containerPrincipal);
+        containerBuscar = findViewById(R.id.containerBuscar);
+        containerSocial = findViewById(R.id.containerSocial);
         containerNuevo = findViewById(R.id.containerNuevo);
         containerCuenta = findViewById(R.id.containerCuenta);
         containerConfiguracion = findViewById(R.id.containerConfiguracion);
@@ -112,8 +114,12 @@ public class HomeActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigation);
         bottomNavigation.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
-            if (itemId == R.id.navigation_principal) {
-                showPrincipal();
+            if (itemId == R.id.navigation_buscar) {
+                showBuscar();
+                return true;
+            }
+            if (itemId == R.id.navigation_social) {
+                showSocial();
                 return true;
             }
             if (itemId == R.id.navigation_nuevo) {
@@ -132,11 +138,15 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         // Por defecto
-        bottomNavigation.setSelectedItemId(R.id.navigation_principal);
+        bottomNavigation.setSelectedItemId(R.id.navigation_buscar);
     }
 
-    private void showPrincipal() {
-        setVisibleContainer(containerPrincipal);
+    private void showBuscar() {
+        setVisibleContainer(containerBuscar);
+    }
+
+    private void showSocial() {
+        setVisibleContainer(containerSocial);
     }
 
     private void showNuevo() {
@@ -152,7 +162,8 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void setVisibleContainer(View visibleContainer) {
-        containerPrincipal.setVisibility(visibleContainer == containerPrincipal ? View.VISIBLE : View.GONE);
+        containerBuscar.setVisibility(visibleContainer == containerBuscar ? View.VISIBLE : View.GONE);
+        containerSocial.setVisibility(visibleContainer == containerSocial ? View.VISIBLE : View.GONE);
         containerNuevo.setVisibility(visibleContainer == containerNuevo ? View.VISIBLE : View.GONE);
         containerCuenta.setVisibility(visibleContainer == containerCuenta ? View.VISIBLE : View.GONE);
         containerConfiguracion.setVisibility(

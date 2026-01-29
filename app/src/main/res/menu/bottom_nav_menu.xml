@@ -2,17 +2,17 @@
     <item
         android:id="@+id/navigation_principal"
         android:icon="@android:drawable/ic_menu_view"
-        android:title="Principal" />
+        android:title="@string/nav_principal" />
     <item
         android:id="@+id/navigation_nuevo"
         android:icon="@android:drawable/ic_input_add"
-        android:title="Nuevo" />
+        android:title="@string/nav_nuevo" />
     <item
         android:id="@+id/navigation_cuenta"
         android:icon="@android:drawable/ic_menu_myplaces"
-        android:title="Cuenta" />
+        android:title="@string/nav_cuenta" />
     <item
         android:id="@+id/navigation_configuracion"
         android:icon="@android:drawable/ic_menu_preferences"
-        android:title="Configuración" />
+        android:title="@string/nav_configuracion" />
 </menu>

@@ -13,6 +13,12 @@
     <string name="content_cuenta_title">Cuenta</string>
     <string name="content_configuracion_title">Configuración</string>
     <string name="content_social_title">Social</string>
+    <string name="login_logo_description">Logo</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_remember_user">Recordar usuario</string>
+    <string name="login_accept">Aceptar</string>
+    <string name="login_create_account">Crear una nueva cuenta</string>
 
     <string-array name="activity_modes">
         <item>ACTIVIDADES DE INTERIOR</item>

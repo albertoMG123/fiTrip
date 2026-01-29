@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FiTrip</string>
+    <string name="bienvenido_a_fitrip">Welcome to</string>
+    <string name="bienvenida">Find routes, sports parks, public courts, and centers like yoga or gym.</string>
+    <string name="cuenta_existente">Already have an account? Sign in</string>
+    <string name="empieza">Start →</string>
+
+    <string name="nav_principal">Home</string>
+    <string name="nav_nuevo">New</string>
+    <string name="nav_cuenta">Account</string>
+    <string name="nav_configuracion">Settings</string>
+    <string name="content_nuevo_title">New</string>
+    <string name="content_cuenta_title">Account</string>
+    <string name="content_configuracion_title">Settings</string>
+
+    <string-array name="activity_modes">
+        <item>INDOOR ACTIVITIES</item>
+        <item>OUTDOOR ACTIVITIES</item>
+    </string-array>
+</resources>

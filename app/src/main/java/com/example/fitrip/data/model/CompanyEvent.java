@@ -1,18 +1,18 @@
 package com.example.fitrip.data.model;
 
-public class EventoEmpresa {
+public class CompanyEvent {
     private Long id;
     private Long empresaId;
     private Long actividadId;
     private Long usuarioId;
-    private TipoEvento tipo;
+    private EventType tipo;
     private String createdAt;
 
-    public EventoEmpresa() {
+    public CompanyEvent() {
     }
 
-    public EventoEmpresa(Long id, Long empresaId, Long actividadId, Long usuarioId, TipoEvento tipo,
-                         String createdAt) {
+    public CompanyEvent(Long id, Long empresaId, Long actividadId, Long usuarioId, EventType tipo,
+                        String createdAt) {
         this.id = id;
         this.empresaId = empresaId;
         this.actividadId = actividadId;
@@ -53,11 +53,11 @@ public class EventoEmpresa {
         this.usuarioId = usuarioId;
     }
 
-    public TipoEvento getTipo() {
+    public EventType getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoEvento tipo) {
+    public void setTipo(EventType tipo) {
         this.tipo = tipo;
     }
 

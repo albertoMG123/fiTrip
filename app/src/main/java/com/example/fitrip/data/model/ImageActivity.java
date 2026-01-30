@@ -1,15 +1,15 @@
 package com.example.fitrip.data.model;
 
-public class ActividadImagen {
+public class ImageActivity {
     private Long id;
     private Long actividadId;
     private String url;
     private Integer orden;
 
-    public ActividadImagen() {
+    public ImageActivity() {
     }
 
-    public ActividadImagen(Long id, Long actividadId, String url, Integer orden) {
+    public ImageActivity(Long id, Long actividadId, String url, Integer orden) {
         this.id = id;
         this.actividadId = actividadId;
         this.url = url;

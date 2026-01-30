@@ -1,6 +1,6 @@
 package com.example.fitrip.data.model;
 
-public class Empresa {
+public class Company {
     private Long id;
     private Long usuarioId;
     private String nombreEmpresa;
@@ -10,10 +10,10 @@ public class Empresa {
     private String emailContacto;
     private String createdAt;
 
-    public Empresa() {
+    public Company() {
     }
 
-    public Empresa(Long id, Long usuarioId, String nombreEmpresa, String descripcion, String direccion,
+    public Company(Long id, Long usuarioId, String nombreEmpresa, String descripcion, String direccion,
                    String telefono, String emailContacto, String createdAt) {
         this.id = id;
         this.usuarioId = usuarioId;

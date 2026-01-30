@@ -1,6 +1,6 @@
 package com.example.fitrip.data.model;
 
-public class Actividad {
+public class Activity {
     private Long id;
     private Long empresaId;
     private Long deporteId;
@@ -11,11 +11,11 @@ public class Actividad {
     private String imagenPrincipalUrl;
     private String createdAt;
 
-    public Actividad() {
+    public Activity() {
     }
 
-    public Actividad(Long id, Long empresaId, Long deporteId, String nombre, String descripcion,
-                     Double precio, String moneda, String imagenPrincipalUrl, String createdAt) {
+    public Activity(Long id, Long empresaId, Long deporteId, String nombre, String descripcion,
+                    Double precio, String moneda, String imagenPrincipalUrl, String createdAt) {
         this.id = id;
         this.empresaId = empresaId;
         this.deporteId = deporteId;

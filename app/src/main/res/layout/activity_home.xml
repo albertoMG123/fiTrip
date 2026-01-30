@@ -65,7 +65,7 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-            <include layout="@layout/content_home_principal" />
+            <include layout="@layout/content_home_main" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,7 +85,7 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <include layout="@layout/content_home_nuevo" />
+            <include layout="@layout/content_home_new" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,7 +95,7 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <include layout="@layout/content_home_cuenta" />
+            <include layout="@layout/content_home_account" />
         </LinearLayout>
 
         <LinearLayout
@@ -105,7 +105,7 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <include layout="@layout/content_home_configuracion" />
+            <include layout="@layout/content_home_configuration" />
         </LinearLayout>
 
     </FrameLayout>

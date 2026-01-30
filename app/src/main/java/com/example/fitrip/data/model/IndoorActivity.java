@@ -2,7 +2,7 @@ package com.example.fitrip.data.model;
 
 import java.util.List;
 
-public class ActividadInterior {
+public class IndoorActivity {
     private Long actividadId;
     private String direccion;
     private Double latitud;
@@ -13,12 +13,12 @@ public class ActividadInterior {
     private Double precioSesion;
     private Integer capacidad;
 
-    public ActividadInterior() {
+    public IndoorActivity() {
     }
 
-    public ActividadInterior(Long actividadId, String direccion, Double latitud, Double longitud,
-                             String horario, List<String> servicios, Double precioMensual,
-                             Double precioSesion, Integer capacidad) {
+    public IndoorActivity(Long actividadId, String direccion, Double latitud, Double longitud,
+                          String horario, List<String> servicios, Double precioMensual,
+                          Double precioSesion, Integer capacidad) {
         this.actividadId = actividadId;
         this.direccion = direccion;
         this.latitud = latitud;

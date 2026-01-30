@@ -3,6 +3,7 @@ package com.example.fitrip.data.cloudinary;
 import android.os.Handler;
 import android.os.Looper;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
@@ -91,6 +92,8 @@ public class CloudinarySignedUploader {
             }
 
             return new JSONObject(body);
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
         } finally {
             if (connection != null) {
                 connection.disconnect();
@@ -145,6 +148,8 @@ public class CloudinarySignedUploader {
             String secureUrl = response.optString("secure_url");
             String publicId = response.optString("public_id");
             return new UploadResult(secureUrl, publicId);
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
         } finally {
             if (connection != null) {
                 connection.disconnect();

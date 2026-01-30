@@ -1,6 +1,6 @@
 package com.example.fitrip.data.model;
 
-public enum RolUsuario {
+public enum UserRol {
     NORMAL,
-    EMPRESA
+    COMPANY
 }

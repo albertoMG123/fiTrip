@@ -1,15 +1,15 @@
 package com.example.fitrip.data.model;
 
-public class ActividadExterior {
+public class OutdoorActivity {
     private Long actividadId;
-    private TipoActividadExterior tipo;
+    private OutdoorActivityType tipo;
     private String ubicacion;
     private Double latitud;
     private Double longitud;
     private Integer altitud;
     private Double distanciaKm;
     private Integer duracionMin;
-    private Dificultad dificultad;
+    private Difficulty dificultad;
     private Double puntoInicioLat;
     private Double puntoInicioLng;
     private Double puntoFinLat;
@@ -17,14 +17,14 @@ public class ActividadExterior {
     private String temporadaRecomendada;
     private String equipoRecomendado;
 
-    public ActividadExterior() {
+    public OutdoorActivity() {
     }
 
-    public ActividadExterior(Long actividadId, TipoActividadExterior tipo, String ubicacion, Double latitud,
-                             Double longitud, Integer altitud, Double distanciaKm, Integer duracionMin,
-                             Dificultad dificultad, Double puntoInicioLat, Double puntoInicioLng,
-                             Double puntoFinLat, Double puntoFinLng, String temporadaRecomendada,
-                             String equipoRecomendado) {
+    public OutdoorActivity(Long actividadId, OutdoorActivityType tipo, String ubicacion, Double latitud,
+                           Double longitud, Integer altitud, Double distanciaKm, Integer duracionMin,
+                           Difficulty dificultad, Double puntoInicioLat, Double puntoInicioLng,
+                           Double puntoFinLat, Double puntoFinLng, String temporadaRecomendada,
+                           String equipoRecomendado) {
         this.actividadId = actividadId;
         this.tipo = tipo;
         this.ubicacion = ubicacion;
@@ -50,11 +50,11 @@ public class ActividadExterior {
         this.actividadId = actividadId;
     }
 
-    public TipoActividadExterior getTipo() {
+    public OutdoorActivityType getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoActividadExterior tipo) {
+    public void setTipo(OutdoorActivityType tipo) {
         this.tipo = tipo;
     }
 
@@ -106,11 +106,11 @@ public class ActividadExterior {
         this.duracionMin = duracionMin;
     }
 
-    public Dificultad getDificultad() {
+    public Difficulty getDificultad() {
         return dificultad;
     }
 
-    public void setDificultad(Dificultad dificultad) {
+    public void setDificultad(Difficulty dificultad) {
         this.dificultad = dificultad;
     }
 

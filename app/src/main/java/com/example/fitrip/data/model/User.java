@@ -1,20 +1,20 @@
 package com.example.fitrip.data.model;
 
-public class Usuario {
+public class User {
     private Long id;
     private String firebaseUid;
     private String nombre;
     private String email;
     private String telefono;
     private String fotoUrl;
-    private RolUsuario rol;
+    private UserRol rol;
     private String createdAt;
 
-    public Usuario() {
+    public User() {
     }
 
-    public Usuario(Long id, String firebaseUid, String nombre, String email, String telefono, String fotoUrl,
-                   RolUsuario rol, String createdAt) {
+    public User(Long id, String firebaseUid, String nombre, String email, String telefono, String fotoUrl,
+                UserRol rol, String createdAt) {
         this.id = id;
         this.firebaseUid = firebaseUid;
         this.nombre = nombre;
@@ -73,11 +73,11 @@ public class Usuario {
         this.fotoUrl = fotoUrl;
     }
 
-    public RolUsuario getRol() {
+    public UserRol getRol() {
         return rol;
     }
 
-    public void setRol(RolUsuario rol) {
+    public void setRol(UserRol rol) {
         this.rol = rol;
     }
 

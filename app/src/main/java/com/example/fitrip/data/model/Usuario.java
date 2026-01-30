@@ -7,14 +7,14 @@ public class Usuario {
     private String email;
     private String telefono;
     private String fotoUrl;
-    private UserRole rol;
+    private RolUsuario rol;
     private String createdAt;
 
     public Usuario() {
     }
 
     public Usuario(Long id, String firebaseUid, String nombre, String email, String telefono, String fotoUrl,
-                   UserRole rol, String createdAt) {
+                   RolUsuario rol, String createdAt) {
         this.id = id;
         this.firebaseUid = firebaseUid;
         this.nombre = nombre;
@@ -73,11 +73,11 @@ public class Usuario {
         this.fotoUrl = fotoUrl;
     }
 
-    public UserRole getRol() {
+    public RolUsuario getRol() {
         return rol;
     }
 
-    public void setRol(UserRole rol) {
+    public void setRol(RolUsuario rol) {
         this.rol = rol;
     }
 

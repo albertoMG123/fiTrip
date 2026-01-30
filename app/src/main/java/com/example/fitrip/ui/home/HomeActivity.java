@@ -26,9 +26,6 @@ public class HomeActivity extends AppCompatActivity {
     private View containerNuevo;
     private View containerCuenta;
     private View containerConfiguracion;
-
-    // ✅ NUEVO
-    private LinearLayout spinnerContainer;
     private ImageView btnArrow;
 
     @Override
@@ -56,7 +53,7 @@ public class HomeActivity extends AppCompatActivity {
         spMode.setSelection(0, false);
 
         // ✅ NUEVO: referencias al contenedor y flecha
-        spinnerContainer = findViewById(R.id.spinner_container); // <-- Asegúrate de tener este id en el XML
+        LinearLayout spinnerContainer = findViewById(R.id.spinner_container); // <-- Asegúrate de tener este id en el XML
         btnArrow = findViewById(R.id.btnArrow);
 
         // ✅ NUEVO: al clicar el contenedor o la flecha, se abre el Spinner

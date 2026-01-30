@@ -5,13 +5,13 @@ public class EventoEmpresa {
     private Long empresaId;
     private Long actividadId;
     private Long usuarioId;
-    private EventType tipo;
+    private TipoEvento tipo;
     private String createdAt;
 
     public EventoEmpresa() {
     }
 
-    public EventoEmpresa(Long id, Long empresaId, Long actividadId, Long usuarioId, EventType tipo,
+    public EventoEmpresa(Long id, Long empresaId, Long actividadId, Long usuarioId, TipoEvento tipo,
                          String createdAt) {
         this.id = id;
         this.empresaId = empresaId;
@@ -53,11 +53,11 @@ public class EventoEmpresa {
         this.usuarioId = usuarioId;
     }
 
-    public EventType getTipo() {
+    public TipoEvento getTipo() {
         return tipo;
     }
 
-    public void setTipo(EventType tipo) {
+    public void setTipo(TipoEvento tipo) {
         this.tipo = tipo;
     }
 

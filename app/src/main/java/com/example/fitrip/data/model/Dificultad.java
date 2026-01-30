@@ -1,6 +1,6 @@
 package com.example.fitrip.data.model;
 
-public enum DifficultyLevel {
+public enum Dificultad {
     FACIL,
     MEDIA,
     DIFICIL

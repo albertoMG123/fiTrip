@@ -2,14 +2,14 @@ package com.example.fitrip.data.model;
 
 public class ActividadExterior {
     private Long actividadId;
-    private OutdoorActivityType tipo;
+    private TipoActividadExterior tipo;
     private String ubicacion;
     private Double latitud;
     private Double longitud;
     private Integer altitud;
     private Double distanciaKm;
     private Integer duracionMin;
-    private DifficultyLevel dificultad;
+    private Dificultad dificultad;
     private Double puntoInicioLat;
     private Double puntoInicioLng;
     private Double puntoFinLat;
@@ -20,9 +20,9 @@ public class ActividadExterior {
     public ActividadExterior() {
     }
 
-    public ActividadExterior(Long actividadId, OutdoorActivityType tipo, String ubicacion, Double latitud,
+    public ActividadExterior(Long actividadId, TipoActividadExterior tipo, String ubicacion, Double latitud,
                              Double longitud, Integer altitud, Double distanciaKm, Integer duracionMin,
-                             DifficultyLevel dificultad, Double puntoInicioLat, Double puntoInicioLng,
+                             Dificultad dificultad, Double puntoInicioLat, Double puntoInicioLng,
                              Double puntoFinLat, Double puntoFinLng, String temporadaRecomendada,
                              String equipoRecomendado) {
         this.actividadId = actividadId;
@@ -50,11 +50,11 @@ public class ActividadExterior {
         this.actividadId = actividadId;
     }
 
-    public OutdoorActivityType getTipo() {
+    public TipoActividadExterior getTipo() {
         return tipo;
     }
 
-    public void setTipo(OutdoorActivityType tipo) {
+    public void setTipo(TipoActividadExterior tipo) {
         this.tipo = tipo;
     }
 
@@ -106,11 +106,11 @@ public class ActividadExterior {
         this.duracionMin = duracionMin;
     }
 
-    public DifficultyLevel getDificultad() {
+    public Dificultad getDificultad() {
         return dificultad;
     }
 
-    public void setDificultad(DifficultyLevel dificultad) {
+    public void setDificultad(Dificultad dificultad) {
         this.dificultad = dificultad;
     }
 

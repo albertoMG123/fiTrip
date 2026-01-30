@@ -3,13 +3,13 @@ package com.example.fitrip.data.model;
 public class Deporte {
     private Long id;
     private String nombre;
-    private SportCategory categoria;
+    private CategoriaDeporte categoria;
     private String createdAt;
 
     public Deporte() {
     }
 
-    public Deporte(Long id, String nombre, SportCategory categoria, String createdAt) {
+    public Deporte(Long id, String nombre, CategoriaDeporte categoria, String createdAt) {
         this.id = id;
         this.nombre = nombre;
         this.categoria = categoria;
@@ -32,11 +32,11 @@ public class Deporte {
         this.nombre = nombre;
     }
 
-    public SportCategory getCategoria() {
+    public CategoriaDeporte getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(SportCategory categoria) {
+    public void setCategoria(CategoriaDeporte categoria) {
         this.categoria = categoria;
     }
 

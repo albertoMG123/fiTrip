@@ -1,6 +1,6 @@
 package com.example.fitrip.data.model;
 
-public enum SportCategory {
+public enum CategoriaDeporte {
     INTERIOR,
     EXTERIOR
 }

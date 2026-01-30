@@ -3,7 +3,6 @@ package com.example.fitrip.data.cloudinary;
 import android.os.Handler;
 import android.os.Looper;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
@@ -92,8 +91,6 @@ public class CloudinarySignedUploader {
             }
 
             return new JSONObject(body);
-        } catch (JSONException e) {
-            throw new RuntimeException(e);
         } finally {
             if (connection != null) {
                 connection.disconnect();
@@ -108,7 +105,7 @@ public class CloudinarySignedUploader {
             String signature,
             String timestamp,
             String folder
-    ) throws IOException, JSONException {
+    ) throws IOException {
         String urlString = String.format(Locale.US, CLOUDINARY_UPLOAD_URL, cloudName);
         String boundary = "----fitrip-" + UUID.randomUUID();
 
